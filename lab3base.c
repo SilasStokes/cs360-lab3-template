@@ -5,6 +5,12 @@
 #include <fcntl.h>
 #include <errno.h>
 
+
+// ** TA Added includes to get source code to compile:
+#include <unistd.h>
+
+
+
 char gpath[128];    // hold token strings 
 char *arg[64];      // token string pointers
 int  n;             // number of token strings
@@ -24,6 +30,7 @@ int tokenize(char *pathname) // YOU have done this in LAB2
     s = strtok(0, " ");
   }
   arg[n] =0;                // arg[n] = NULL pointer 
+  return 0;
 }
 
 int main(int argc, char *argv[ ], char *env[ ])
