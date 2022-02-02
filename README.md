@@ -14,12 +14,10 @@ Note you must `git push` your code to submit it. Submissions automatically occur
 ## Autotests
 Autotests are run on your code when you push to check if it is compiling or not. To be fully transparent, the following commands will be used to check your code (if you wish to manually verify prior to pushing):
 ```
-cd src && ./mk
+./mk && ls 
 ```
-```
-cd src && rm a.out && ./mk && ls
-```
-Note this should just compile your program. Please **do not** add a.out to this script-- as you will not pass the autotest (as your program most likely needs user input).
+
+Note this should just compile your program. Please **do not** add ./a.out to this script-- as you will not pass the autotest (as your program most likely needs user input).
 
 You may confirm if your latest commit is passing the autotests by going to your online repositoy (after performing a `git push`) and going to the "Actions" tab-- the top commit should have a green check mark next to it if it is passing.
 
